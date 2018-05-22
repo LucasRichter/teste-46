@@ -1,0 +1,22 @@
+@import 'reset';
+
+//Mixins
+@import 'fonts';
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app {
+  margin: 115px 50px;
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 96px;
+  }
+}
+
+//Components
+@import 'components/*';

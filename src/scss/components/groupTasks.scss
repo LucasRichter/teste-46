@@ -1,0 +1,51 @@
+$circle-size: 14px;
+
+.group-tasks {
+  margin-bottom: 90px;
+
+  &__header {
+    display: flex;
+    margin-bottom: 54px;
+    align-items: center;
+  }
+
+  &__table {
+    display: flex;
+    font-size: 12px;
+    color: #88889C;
+    justify-content: space-around;
+    margin: 0 50px;
+
+    p {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+  }
+
+  &__circle {
+    border-radius: 50%;
+    width: $circle-size;
+    height: $circle-size;
+    margin-right: 44px;
+
+    &--pending {
+      @extend .group-tasks__circle;
+      background-color: #FF7052;
+    }
+
+    &--producting {
+      @extend .group-tasks__circle;
+      background-color: #FFC800;
+    }
+
+    &--solved {
+      @extend .group-tasks__circle;
+      background-color: #2DC76D;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #656589;
+  }
+}
